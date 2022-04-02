@@ -6,7 +6,6 @@ from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import StandardScaler,OneHotEncoder
 from lightgbm import LGBMClassifier
-from PIL import Image
 
 
 st.title('Heart Disease Checker')
@@ -14,8 +13,7 @@ st.title('Heart Disease Checker')
 st.sidebar.info(f'''
          This app predicts wheather You are likely to have a **heart realated disease** or not.  
          This model is trained on the data of over **50K patients** 🩺💓''') 
-img=Image.open('header.png')
-st.sidebar.image(img)
+
 
 st.info('**To know your heart disease status fill up the below information**')
 
