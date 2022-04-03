@@ -18,15 +18,15 @@ Surveillance System (BRFSS), which conducts annual telephone surveys to gather d
 7. MentalHealth: Thinking about your mental health, for how many days during the past 30 days was your mental health not good?
 8. DiffWalking: Do you have serious difficulty walking or climbing stairs?
 9. Sex: Are you male or female?
-10.AgeCategory: Fourteen-level age category
-11.Race: Imputed race/ethnicity value
-12.Diabetic: (Ever told) (you had) diabetes?
-13.PhysicalActivity: Adults who reported doing physical activity or exercise during the past 30 days other than their regular job
-14.GenHealth: Would you say that in general your health is..
-15.SleepTime: On average, how many hours of sleep do you get in a 24-hour period?
-16.Asthma:(Ever told) (you had) asthma?
-17.KidneyDisease: Not including kidney stones, bladder infection or incontinence, were you ever told you had kidney disease?
-18.SkinCancer : (Ever told) (you had) skin cancer?
+10. AgeCategory: Fourteen-level age category
+11. Race: Imputed race/ethnicity value
+12. Diabetic: (Ever told) (you had) diabetes?
+13. PhysicalActivity: Adults who reported doing physical activity or exercise during the past 30 days other than their regular job
+14. GenHealth: Would you say that in general your health is..
+15. SleepTime: On average, how many hours of sleep do you get in a 24-hour period?
+16. Asthma:(Ever told) (you had) asthma?
+17. KidneyDisease: Not including kidney stones, bladder infection or incontinence, were you ever told you had kidney disease?
+18. SkinCancer : (Ever told) (you had) skin cancer?
 
 
 ## Project Overview
