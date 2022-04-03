@@ -20,7 +20,7 @@ st.info('**To know your heart disease status fill up the below information**')
 
 
 
-Weight=st.number_input('Weight')
+Weight=st.number_input('Weight in kg')
 
 Height=st.number_input('Height in cm',min_value=0.1)
 
