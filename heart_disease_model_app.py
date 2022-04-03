@@ -5,7 +5,6 @@ import pandas as pd
 from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import StandardScaler,OneHotEncoder
-from lightgbm import LGBMClassifier
 
 
 st.title('Heart Disease Checker')
