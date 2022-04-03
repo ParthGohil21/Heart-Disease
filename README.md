@@ -8,7 +8,6 @@ Surveillance System (BRFSS), which conducts annual telephone surveys to gather d
 
 
 ## Data Description 
-## Data Description 
        
 1. HeartDisease :Respondents that have ever reported having coronary heart disease (CHD) or myocardial infarction (MI) 
 2. BMI: Body Mass Index (BMI)
