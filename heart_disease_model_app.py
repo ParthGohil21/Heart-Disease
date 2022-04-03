@@ -6,16 +6,15 @@ from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import StandardScaler,OneHotEncoder
 from lightgbm import LGBMClassifier
-from PIL import Image
 
 
 st.title('Heart Disease Checker')
 
 st.sidebar.info(f'''
          This app predicts wheather You are likely to have a **heart realated disease** or not.  
-         This model is trained on the data of over **50K patients** 🩺💓''') 
-img=Image.open('header.png')
-st.sidebar.image(img)
+         This model is trained on the data of over **500K patients** 🩺💓''') 
+
+st.sidebar.image('header.png')
 
 st.info('**To know your heart disease status fill up the below information**')
 
@@ -60,7 +59,7 @@ BMI=round(BMI,2)
 
 
 def load_pipeline():
-   pipeline=joblib.load(r'C:\Users\parth\OneDrive\Desktop\heart disease project\lgb\lgb_model.pkl')
+   pipeline=joblib.load('lgb_pipe.pkl')
    return pipeline
 
 
