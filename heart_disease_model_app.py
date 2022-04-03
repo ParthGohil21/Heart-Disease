@@ -26,7 +26,7 @@ Height=st.number_input('Height in cm',min_value=0.1)
 
 Sex=st.selectbox('Sex',['Male','Female'])
 
-GenHealth=st.selectbox('How is your overall health?',['Very good', 'Good', 'Excellent', 'Fair', 'Poor'])
+GenHealth=st.selectbox('How is your overall health?',['Excellent', 'Very good', 'Good','Fair', 'Poor'])
 
 AgeCategory=st.selectbox('Age Category',['18-24','25-29', '30-34','35-39','40-44','45-49','50-54',
                                     '55-59','60-64','65-69','70-74','75-79', '80 or older'])
@@ -36,13 +36,13 @@ SleepTime=st.selectbox('On average, how many hours of sleep do you get in a 24-h
               12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0,
               23.0, 24.0])
 
-DiffWalking=st.selectbox('Do you have serious difficulty walking or climbing stairs?',['Yes','No'])
+DiffWalking=st.selectbox('Do you have serious difficulty walking or climbing stairs?',['No','Yes'])
 
-Smoking=st.selectbox('have you smoked 100 or more ciggarates in your lifetime?',['Yes','No'])
+Smoking=st.selectbox('have you smoked 100 or more ciggarates in your lifetime?',['No','Yes'])
 
-AlcoholDrinking=st.selectbox('Do you drink Alcohol regularly?',['Yes','No'])
+AlcoholDrinking=st.selectbox('Do you drink Alcohol regularly?',['No','Yes'])
 
-Stroke=st.selectbox('Did you ever had Stroke?',['Yes','No'])
+Stroke=st.selectbox('Did you ever had Stroke?',['No','Yes'])
 
 PhysicalHealth=st.number_input('how many days during the past 30 days, you had bad physical health?',step=1.0,min_value=0.0,max_value=30.0)
 
@@ -50,7 +50,7 @@ Diabetic=st.selectbox('Do you have Diabetes?',['No', 'Yes', 'No, borderline diab
 
 PhysicalActivity=st.selectbox('Have you done any physical activity or exercise in last 30 days?',['Yes','No'])
 
-Asthma=st.selectbox('Do you have Asthma?',['Yes','No'])            
+Asthma=st.selectbox('Do you have Asthma?',['No','Yes'])            
 
 
 BMI=(Weight/(Height**2))*10000
