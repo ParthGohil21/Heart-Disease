@@ -20,21 +20,21 @@ st.info('**To know your heart disease status fill up the below information**')
 
 
 
-Weight=st.number_input('Weight in kg')
 
-Height=st.number_input('Height in cm',min_value=0.1)
+Weight=st.number_input('Weight in KG',min_value=0,step=10)
+
+Height=st.number_input('Height in CM',min_value=1,step=10)
 
 Sex=st.selectbox('Sex',['Male','Female'])
 
-GenHealth=st.selectbox('How is your overall health?',['Excellent', 'Very good', 'Good','Fair', 'Poor'])
+GenHealth=st.selectbox(f'''How is your overall health(Your satisfaction level)?
+                           (Excellent if no chronic condition or health complaint at all)''',['Excellent','Very good', 'Good', 'Fair', 'Poor'])
+
 
 AgeCategory=st.selectbox('Age Category',['18-24','25-29', '30-34','35-39','40-44','45-49','50-54',
                                     '55-59','60-64','65-69','70-74','75-79', '80 or older'])
 
-SleepTime=st.selectbox('On average, how many hours of sleep do you get in a 24-hour period?',
-              [ 1.0,  2.0,  3.0,  4.0,  5.0, 6.0,  7.0, 8.0,  9.0,  10.0,  11.0,
-              12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0,
-              23.0, 24.0])
+SleepTime=st.slider('On average, how many hours of sleep do you get in a 24-hour period?',0,24,1)
 
 DiffWalking=st.selectbox('Do you have serious difficulty walking or climbing stairs?',['No','Yes'])
 
@@ -44,7 +44,7 @@ AlcoholDrinking=st.selectbox('Do you drink Alcohol regularly?',['No','Yes'])
 
 Stroke=st.selectbox('Did you ever had Stroke?',['No','Yes'])
 
-PhysicalHealth=st.number_input('how many days during the past 30 days, you had bad physical health?',step=1.0,min_value=0.0,max_value=30.0)
+PhysicalHealth=st.slider('how many days during the past 30 days, you had bad physical health? (which includes physical illness and injury)',step=1.0,min_value=0.0,max_value=30.0)
 
 Diabetic=st.selectbox('Do you have Diabetes?',['No', 'Yes', 'No, borderline diabetes', 'Yes (during pregnancy)'])
 
