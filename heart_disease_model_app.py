@@ -121,7 +121,7 @@ def shap_force_plot(mask_csv):
     #  loading model pipeline
     pipeline = load_pipeline()
     #  loading mask
-    mask = pd.read_csv(r'C:\Users\parth\OneDrive\Desktop\ML Projects\heart disease project\lgb\mask.csv')
+    mask = pd.read_csv(r'mask.csv')
     #  creating explainer. arguments are model and transformed dataset so make sure
     #  you index accordingly if you come across an exception
     explainer = shap.TreeExplainer(pipeline[1], pipeline[0].transform(mask))
