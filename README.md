@@ -30,7 +30,14 @@ Surveillance System (BRFSS), which conducts annual telephone surveys to gather d
 
 
 ## Project Overview
-The dataset contains 18 variables (9 booleans, 5 strings and 4 decimals). In machine learning projects, "HeartDisease" can be used as the explonatory variable, but note that the classes are heavily unbalanced. So I used Over Sampling for balancing classes. After balancing dataset I have used Light GBM Classifier to predict wheather the person is likely to have heart disease or not('Yes' if person is likely to have heart disease and 'No' If person isn't likely to have heart disease).
+• Performed various data cleaning and Exploratory data analysis techniques on the dataset (2020 CDC
+Survey of USA People). Scaled numerical features and encoded categorical features with Sklearn
+Column Transformer and Pipeline. Dataset holds data of 5,80,000 people (after balancing the dataset).
+
+• Executed feature engineering and feature selection tasks on the dataset. The most important features were carried out for the model-building part (13 features).
+
+• Developed Machine Learning model for heart disease detection using LightGBM algorithm with
+Python on the updated dataset. Applied Shap Values for model explainability and to derive insights.
 
 
 ## Tools Overview 
